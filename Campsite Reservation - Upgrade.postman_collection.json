@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "8d15df63-2a78-4c21-bab3-49a758e95873",
+		"name": "Campsite Reservation - Upgrade",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Reserve",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"abc@gmail.com\",\n    \"name\" : \"Joe Doe\",\n    \"arrival\": \"02/10/2022\",\n    \"number_days\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/campsite/reserve",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"campsite",
+						"reserve"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel Reservation",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"abc@gmail.com\",\n    \"name\" : \"Joe Doe\",\n    \"arrival\": \"02/10/2022\",\n    \"number_days\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/campsite/reserve/cancel/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"campsite",
+						"reserve",
+						"cancel",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check In",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"reservation_id\" : 1,\n    \"event_time\": \"02/02/2022 12:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/campsite/checkin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"campsite",
+						"checkin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Out",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"reservation_id\" : 1,\n    \"event_time\": \"02/05/2022 11:59\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/campsite/checkout",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"campsite",
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Reservations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/campsite/reservations?email=abc@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"campsite",
+						"reservations"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "abc@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Availability",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/campsite/availability?start=02/07/2022&end=02/11/2022",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"campsite",
+						"availability"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "02/07/2022"
+						},
+						{
+							"key": "end",
+							"value": "02/11/2022"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
