@@ -1,0 +1,17 @@
+com/upgrade/campsitereservation/errorhandler/CampsiteException.class
+com/upgrade/campsitereservation/dto/ReservationRequest.class
+com/upgrade/campsitereservation/dto/ReservationAvailabilityResponse$ReservationAvailabilityResponseBuilder.class
+com/upgrade/campsitereservation/controller/CampsiteCheckInOutController.class
+com/upgrade/campsitereservation/CampsiteReservationApplication.class
+com/upgrade/campsitereservation/dto/ErrorResponse.class
+com/upgrade/campsitereservation/entity/CampsiteReservation.class
+com/upgrade/campsitereservation/service/CheckInOutService.class
+com/upgrade/campsitereservation/service/CampsiteService.class
+com/upgrade/campsitereservation/controller/CampsiteReservationController.class
+com/upgrade/campsitereservation/dto/ErrorResponse$ErrorResponseBuilder.class
+com/upgrade/campsitereservation/entity/CampsiteReservation$CampsiteReservationBuilder.class
+com/upgrade/campsitereservation/dto/ReservationAvailabilityResponse.class
+com/upgrade/campsitereservation/service/ReservationService.class
+com/upgrade/campsitereservation/repo/CampsiteReservationRepository.class
+com/upgrade/campsitereservation/dto/CheckInOutRequest.class
+com/upgrade/campsitereservation/errorhandler/GlobalErrorResponseExceptionHandler.class
